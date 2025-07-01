@@ -1,1 +1,1 @@
-This is a Node.js project for practice.
+This is the FIRST Backend project for practice.
