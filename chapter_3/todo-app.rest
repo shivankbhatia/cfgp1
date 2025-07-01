@@ -1,0 +1,20 @@
+### Home Page
+GET http://localhost:3000
+
+### Register User
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username": "shivank125@gmail.com",
+    "password": "abcedfeg12345"
+}
+
+### Login User
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "shivank125@gmail.com",
+    "password":  "abcedfeg12345"
+}
