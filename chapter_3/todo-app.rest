@@ -18,3 +18,30 @@ Content-Type: application/json
     "username": "shivank125@gmail.com",
     "password":  "abcedfeg12345"
 }
+
+
+### TODOS ENDPOINT
+GET HTTP://localhost:3000/TODOS
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzUxNDE1MjU5LCJleHAiOjE3NTE0MTg4NTl9.soe_K0sezv0ST2hzp9tj-MojzykcPpAnfCrsAOoJqXs
+
+###
+POST http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzUxNDE1MjU5LCJleHAiOjE3NTE0MTg4NTl9.soe_K0sezv0ST2hzp9tj-MojzykcPpAnfCrsAOoJqXs
+Content-Type: application/json
+
+{
+    "task": "This is the uploaded Todo."
+}
+
+### Update
+PUT http://localhost:3000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzUxNDE1MjU5LCJleHAiOjE3NTE0MTg4NTl9.soe_K0sezv0ST2hzp9tj-MojzykcPpAnfCrsAOoJqXs
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+### Delete
+DELETE  http://localhost:3000/todos/3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzUxNDE1MjU5LCJleHAiOjE3NTE0MTg4NTl9.soe_K0sezv0ST2hzp9tj-MojzykcPpAnfCrsAOoJqXs

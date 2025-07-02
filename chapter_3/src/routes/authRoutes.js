@@ -43,7 +43,7 @@ router.post('/login', (req, res) => {
         if (!passwordIsValid)
             res.status(203).send({ "message": "Access Denied!" })
 
-        const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET_KEY, { expiresIn: '1h' })
+        const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET_KEY, { expiresIn: '1m' })
         res.status(200).send({ token })
 
     } catch (error) {
